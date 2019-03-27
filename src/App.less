@@ -1,0 +1,24 @@
+@import './libs/less/vars.less';
+html,body,#root{
+    height: 100%;
+}
+
+#root{
+    display:flex;
+    flex-direction: column;
+    .enjoy{
+        &-header{
+            border-bottom: 1px solid @border-color;
+        }
+        &-body{
+            flex: 1;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        &-tabbar-warpper{
+            height: 64px;
+        }
+    }
+}
+

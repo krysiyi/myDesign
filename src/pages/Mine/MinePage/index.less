@@ -1,0 +1,102 @@
+@import '../../../libs/less/vars.less';
+
+.hp-minepage-person{
+    color: @normal-color;
+    background: url(../../../images/mine-bg.jpg);
+    background-size: 100%;
+    height: 224px;
+    position: relative;
+    &-infor{
+        &-icon{
+            height: 25px;
+            .icon-message{
+                display: block;
+                float: right;
+                margin-right: 30px;
+                margin-top: 10px;
+            }
+        }
+        &-photo{
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            margin: 10px auto;
+            border-radius: 100%;
+        }
+        &-username{
+            text-align: center;
+        }
+    }
+    &-integral{
+        display: flex;
+        background: #fff;
+        padding: 10px  0;
+        margin-top: 33px;
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        bottom: -1px;
+        &-left{
+            width: 50%;
+            border-right:1px solid @border-color;
+            padding: 0 20px;
+            &-text{
+                float: left;
+                line-height: 22px;
+            } 
+            &-next{
+                float: right;
+                line-height: 50px;
+            }
+        }
+        &-right{
+            width: 50%;
+            padding: 0 20px;
+            &-text{
+                float: left;
+                line-height: 25px;
+            } 
+            &-next{
+                float: right;
+                line-height: 50px;
+            }
+        }
+    }
+}
+.hp-minepage-order{
+    background: #fff;
+    margin:12px 0;
+    border: 1px solid @border-color;
+    &-title{
+        font-size:18px;
+        height: 55px;
+        line-height: 55px;
+        padding: 0 20px;
+        border-bottom: 1px solid @border-color;
+        span{
+            font-size:14px;
+            display: block;
+            float: right;
+            color: @normal-color;
+        }
+        
+    }
+    &-items{
+        font-size:14px;
+        display: flex;
+        line-height: 20px;
+        padding: 15px 0;
+        &-item{
+            flex:1;
+            text-align: center;
+        }
+    }
+}
+.hp-minepage-options{
+    background: gray;
+    margin:12px 0;
+}
+
+.iconfont{
+    font-size: 22px;
+}
